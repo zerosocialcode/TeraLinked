@@ -1,7 +1,9 @@
 # TeraBox Direct Download Link Generator
 
-A command-line tool to generate direct download links and file info for TeraBox shared files, using [TeraboxDL](https://github.com/falconthehunter/Terabox) under the hood.  
-It features a user-friendly [Rich](https://github.com/Textualize/rich) interface and supports persistent authentication with a custom cookie.
+A beautiful, fast, and user-friendly command-line tool to generate **direct download links** and file info for TeraBox shared files.  
+Powered by the excellent [`terabox-downloader`](https://github.com/mhoe1/terabox-downloader) library and enhanced with a colorful [Rich](https://github.com/Textualize/rich) interface.
+
+Say goodbye to slow web redirects and hello to **instant direct links**!
 
 ---
 
@@ -30,22 +32,15 @@ It features a user-friendly [Rich](https://github.com/Textualize/rich) interface
 1. **Clone or Download this Repository**
 
     ```bash
-    git clone https://github.com/falconthehunter/Terabox.git
-    cd Terabox
+    git clone https://github.com/zerosocialcode/TeraLinked.git
+    cd TeraLinked
     ```
 
 2. **Install Required Dependencies**
 
     ```bash
-    pip install TeraboxDL
-    pip install rich
+    pip install -r requirements.txt
     ```
-
-    _Required packages:_
-    - `rich`
-    - `TeraboxDL` (make sure the [TeraboxDL](https://github.com/falconthehunter/Terabox) library is installed and accessible)
-
----
 
 ## Configuration
 
@@ -65,7 +60,7 @@ It features a user-friendly [Rich](https://github.com/Textualize/rich) interface
 Run the script from your terminal:
 
 ```bash
-python script.py
+python main.py
 ```
 
 You will be prompted to enter a TeraBox shared link.  
@@ -92,13 +87,6 @@ https://download-link-generated-by-teraboxdl.com/abc123...
 - Your TeraBox cookie is required for authentication.  
 - The script suppresses the TeraboxDL banner for a cleaner output.
 - If you encounter errors, check that your cookie is valid and not expired.
-
----
-
-## Credits
-
-- Built with [Rich](https://github.com/Textualize/rich) for CLI enhancements
-- Powered by [TeraboxDL](https://github.com/falconthehunter/Terabox) for TeraBox link processing
 
 ---
 
